@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Holberton</title>
+</head>
+<body>
+    <h1>
+        {% if request.accept_languages.best_match(['en', 'fr']) == 'fr' %}
+            Bonjour le monde
+        {% else %}
+            Hello world
+        {% endif %}
+    </h1>
+</body>
+</html>
+
